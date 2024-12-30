@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* reset */
+
+body{
+    font-family: Arial, Helvetica, "Noto Sans TC", sans-serif ;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+
+/* CSS */
+
+/* header */
+
+.header{
+    background-color: rgb(8, 119, 119);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-phone{
+    display: none;
+}
+
+
+/* nav */
+
+.nav-btnWrao{
+    display: none;
+}
+
+
+.nav-ul{
+    display: flex;
+}

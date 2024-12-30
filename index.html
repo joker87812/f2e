@@ -7,30 +7,90 @@
     <meta name="keywords" content="前端工程, 前端工程師, 前端, 網頁, 網頁工程師, F2E, Front end, Front end Engineer">
     <meta name="description"
         content="許多人認為「工程師」是一個遙不可及的職位，以為自己如果不是資工相關領域出身，就會難以成為工程師。但其實有許多後端工程師、軟體工程師等都是透過自學轉職成為優秀的工程師。那麼，該怎麼做呢？本次 10 個常見的前端、軟體工程師等課程，「成為工程師」不再只是空想，而是真的可以邁進的方向！">
+<!-- Open Graph -->
     <meta property="og:url" content="https://joker87812.github.io/f2e/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="F2E 前端開發">
-    <meta property="og:description" content="許多人認為「工程師」是一個遙不可及的職位，以為自己如果不是資工相關領域出身，就會難以成為工程師。但其實有許多後端工程師、軟體工程師等都是透過自學轉職成為優秀的工程師。那麼，該怎麼做呢？本次 10 個常見的前端、軟體工程師等課程，「成為工程師」不再只是空想，而是真的可以邁進的方向！">
+    <meta property="og:description"
+        content="許多人認為「工程師」是一個遙不可及的職位，以為自己如果不是資工相關領域出身，就會難以成為工程師。但其實有許多後端工程師、軟體工程師等都是透過自學轉職成為優秀的工程師。那麼，該怎麼做呢？本次 10 個常見的前端、軟體工程師等課程，「成為工程師」不再只是空想，而是真的可以邁進的方向！">
     <meta property="og:image" content="https://joker87812.github.io/f2e/images/og-index.png">
     <meta property="og:locale" content="zh_TW">
-    
+
     <title>F2E 前端開發</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<!-- RESET CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- 本網頁的CSS -->
+    <link rel="stylesheet" href="./style/index.css">
+<!-- 字體的CSS-Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+<!-- 為了ICON而加入的語法連結-Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
+<!-- 最上面那一條選單(要釘選) -->
+    <header class="header">
+<!-- 左上的LOGO -->
+        <div class="header-logo">
+            <a href="#">
+                <img class="header-img header-img-logo" src="./images/header-logo.png" width="160" height="45" alt="F2E 前端開發">
+            </a>
+        </div>
+<!-- 右上的選單 -->
+        <div class="header-list">
+            <nav class="nav">
+                <ul class="nav-ul">
+                    <li class="nav-li">
+                        <a class="nav-link" href="#">挑戰自我</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-link" href="#">課程說明</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-link" href="#">培訓成果</a>
+                    </li>
+                </ul>
+                <!-- 手機版才會出現的ICON-關閉 -->
+                <div class="nav-btnWrao">
+                    <button class="nav-btn" type="button">
+                        <i class="fa-solid fa-xmark fa-fw"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+<!-- 手機版才會出現的ICON-選單 -->
+        <div class="header-phone">
+            <div class="header-btnWrap">
+                <button class="header-btn" type="button">
+                    <i class="fa-solid fa-bars fa-fw"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
-    挑戰自我
-    課程說明
-    培訓成果
-
-    <div>F2E 前端開發</div>
-    <div>前端工程師 養成班</div>
-    <div>學會，百萬年薪不是夢</div>
-
-
-
-
+<!-- 輪播的BANNERs -->
+    <section class="banner">
+        <!-- 文字 -->
+        <div class="banner-head">
+            <h2 class="banner-subtitle">F2E 前端開發</h2>
+            <h1 class="banner-title">前端工程師 養成班</h1>
+            <p class="banner-desc">學會，百萬年薪不是夢</p>
+        </div>
+        <!-- 圖片 -->
+        <div class="banner-body">
+            <img class="banner-img" src="./images/banner/banner-1-desktop.jpg" width="750" height="422" alt="">
+            <img class="banner-img" src="./images/banner/banner-2-desktop.jpg" width="1024" height="576" alt="">
+            <img class="banner-img" src="./images/banner/banner-3-desktop.jpg" width="1500" height="855" alt="">
+            <img class="banner-img" src="./images/banner/banner-4-desktop.jpg" width="1800" height="1200" alt="">
+        </div>
+    </section>
 
 
 
