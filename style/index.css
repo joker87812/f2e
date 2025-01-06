@@ -1,5 +1,71 @@
 @charset "utf-8";
 
+/* variable-變數設定 */
+:root{
+    --primary-color:#24b4d7;
+    --background-alpha:rgba(255, 255, 255, .4);
+}
+
+/* animation-輪播動畫設定 */
+.ani-fade{
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.ani-delay-5s{
+    animation-delay: 5s;
+}
+
+.ani-delay-10s{
+    animation-delay: 10s;
+}
+
+.ani-delay-15s{
+    animation-delay: 15s;
+}
+
+@keyframes fade {
+    0%{
+        opacity:0 ;
+    }
+    5%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+}
+
+/* animation-文字動畫設定 */
+.ani-word{
+    animation-name: word;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes word {
+    0%{
+        color: #fff;
+    }
+    5%{
+        color: var(--primary-color)
+    }
+    50%{
+        color: var(--primary-color)
+    }
+    55%{
+        color: #fff
+    }
+    100%{
+        color: #fff;
+    }
+}
+
 /* reset */
 
 body{
@@ -10,30 +76,118 @@ img {
     vertical-align: bottom;
 }
 
-
-/* CSS */
-
-/* header */
+/* 本網頁的CSS */
+/* header-最上面那一條選單 */
 
 .header{
-    background-color: rgb(8, 119, 119);
+    /* background-color: rgb(19, 44, 44); */
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* header-選單要釘選 */
+.header-fix{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-logo, .header-list, .header-phone{
+    padding: .5rem .7rem;
 }
 
 .header-phone{
     display: none;
 }
 
+/* nav-右上的選單 */
 
-/* nav */
-
-.nav-btnWrao{
+.nav-btnWrap{
     display: none;
 }
-
 
 .nav-ul{
     display: flex;
 }
+
+.nav-li{
+    margin-left:1rem;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.nav-link:hover{
+    text-decoration:underline;
+}
+
+/* banner-輪播的BANNERs */
+
+.banner{
+    position: relative;
+    aspect-ratio: 16/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 文字 */
+.banner-head{
+    position: relative;
+    z-index: 2;
+    padding: 5rem;
+    color: var(--primary-color);
+    /* 文字底色 */
+    background-image: linear-gradient(
+        -45deg,
+        var(--background-alpha) 0%,
+        var(--background-alpha) 25%,
+        transparent 26%,
+        transparent 50%,
+        var(--background-alpha) 51%,
+        var(--background-alpha) 75%,
+        transparent 76%,
+        transparent 100%);
+    background-size: 7px 7px;
+    text-align: center;
+}
+
+.banner-subtitle{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.banner-desc{
+    font-size: 2rem;
+}
+
+/* 圖片 */
+.banner-body{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.banner-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9; /* 設定比例 */
+    object-fit: cover; /* 裁切 */
+}
+
+
+
+
