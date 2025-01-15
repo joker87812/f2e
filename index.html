@@ -48,13 +48,13 @@
             <nav class="nav">
                 <ul class="nav-ul">
                     <li class="nav-li">
-                        <a class="nav-link" href="#">挑戰自我</a>
+                        <a class="nav-link" href="#Info">挑戰自我</a>
                     </li>
                     <li class="nav-li">
-                        <a class="nav-link" href="#">課程說明</a>
+                        <a class="nav-link" href="#Subj">課程說明</a>
                     </li>
                     <li class="nav-li">
-                        <a class="nav-link" href="#">培訓成果</a>
+                        <a class="nav-link" href="#Achieve">培訓成果</a>
                     </li>
                 </ul>
                 <!-- 手機版才會出現的ICON-關閉 -->
@@ -85,6 +85,22 @@
         </div>
         <!-- 圖片 -->
         <div class="banner-body">
+            <picture>
+                <source media="(max-width:768px)" srcset="./images/banner/banner-1-mobile.jpg">
+                <img class="banner-img ani-fade" src="./images/banner/banner-1-desktop.jpg" width="750" height="422" alt="">
+            </picture>
+            <picture>
+                <source media="(max-width:768px )" srcset="./images/banner/banner-2-mobile.jpg">
+                <img class="banner-img ani-fade ani-delay-5s" src="./images/banner/banner-2-desktop.jpg" width="1024" height="576" alt="">
+            </picture>
+            <picture>
+                <source media="(max-width:768px )" srcset="./images/banner/banner-3-mobile.jpg">
+                <img class="banner-img ani-fade ani-delay-10s" src="./images/banner/banner-3-desktop.jpg" width="1500" height="855" alt="">
+            </picture>
+            <picture>
+                <source media="(max-width:768px )" srcset="./images/banner/banner-4-mobile.jpg">
+                <img class="banner-img ani-fade ani-delay-15s" src="./images/banner/banner-4-desktop.jpg" width="1800" height="1200" alt="">
+            </picture>
             <img class="banner-img ani-fade" src="./images/banner/banner-1-desktop.jpg" width="750" height="422" alt="">
             <img class="banner-img ani-fade ani-delay-5s" src="./images/banner/banner-2-desktop.jpg" width="1024" height="576" alt="">
             <img class="banner-img ani-fade ani-delay-10s" src="./images/banner/banner-3-desktop.jpg" width="1500" height="855" alt="">
@@ -93,7 +109,7 @@
     </section>
 
 <!-- 介紹區 introduce -->
-<section class="section section-info">
+<section class="section section-info" id="Info">
     <div class="section-container h-container-m h-mx-auto h-row">
         <!-- 左側 -->
         <header class="section-head">
@@ -115,7 +131,7 @@
 </section>
 
 <!-- 介紹區2 introduce -->
-<section class="section section-subj h-gradient-stripe">
+<section class="section section-subj h-gradient-stripe" id="Subj">
     <div class="section-container h-container-m h-mx-auto h-row">
         <!-- 標題 -->
         <header class="section-head">
@@ -316,7 +332,7 @@
 </section>
 
 <!-- 培訓成果 achieve  -->
-<section class="section section-achieve">
+<section class="section section-achieve" id="Achieve">
     <div class="section-container h-container-s h-mx-auto h-row">
         
         <header class="section-head">
@@ -357,10 +373,12 @@
         <!-- 表格 -->
             <div class="section-item">
                 <div class="tableWrap">
-                    <table>
+                    <table class="table table-border table-stripe table-hover table-nowrap">
                         <thead>
+                            <!-- tr-列 -->
                             <tr>
                                 <th>&nbsp;</th>
+                                <!-- 上面值代表空白 -->
                                 <th>培訓人數</th>
                                 <th>結訓人數</th>
                                 <th>就業人數</th>
@@ -368,40 +386,40 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>第一屆</td>
-                                <td>21 人</td>
-                                <td>17 人</td>
-                                <td>前端工程師 16 人</td>
+                                <th>第一屆</th>
+                                <td class="h-text-center">21 人</td>
+                                <td class="h-text-center">17 人</td>
+                                <td class="h-text-center">前端工程師 16 人</td>
                             </tr>
                             <tr>
-                                <td>第二屆</td>
-                                <td>20 人</td>
-                                <td>17 人</td>
-                                <td>前端工程師 13 人</td>
+                                <th>第二屆</th>
+                                <td class="h-text-center">20 人</td>
+                                <td class="h-text-center">17 人</td>
+                                <td class="h-text-center">前端工程師 13 人</td>
                             </tr>
                             <tr>
-                                <td>第三屆</td>
-                                <td>40 人</td>
-                                <td>38 人</td>
-                                <td>前端工程師 26 人</td>
+                                <th>第三屆</th>
+                                <td class="h-text-center">40 人</td>
+                                <td class="h-text-center">38 人</td>
+                                <td class="h-text-center">前端工程師 26 人</td>
                             </tr>
                             <tr>
-                                <td>第四屆</td>
-                                <td>33 人</td>
-                                <td>27 人</td>
-                                <td>前端工程師 21 人</td>
+                                <th>第四屆</th>
+                                <td class="h-text-center">33 人</td>
+                                <td class="h-text-center">27 人</td>
+                                <td class="h-text-center">前端工程師 21 人</td>
                             </tr>
                             <tr>
-                                <td>第五屆</td>
-                                <td>28 人</td>
-                                <td>22 人</td>
-                                <td>前端工程師 17 人</td>
+                                <th>第五屆</th>
+                                <td class="h-text-center">28 人</td>
+                                <td class="h-text-center">22 人</td>
+                                <td class="h-text-center">前端工程師 17 人</td>
                             </tr>
                             <tr>
-                                <td>第六屆</td>
-                                <td>29 人</td>
-                                <td>20 人</td>
-                                <td>前端工程師 16 人</td>
+                                <th>第六屆</th>
+                                <td class="h-text-center">29 人</td>
+                                <td class="h-text-center">20 人</td>
+                                <td class="h-text-center">前端工程師 16 人</td>
                             </tr>
                         </tbody>
                     </table>
@@ -421,9 +439,32 @@
 <!-- 頁尾  -->
 
 <footer class="footer">
-    <div class="footer-bar">
+    <div class="footer-container h-container-m h-mx-auto h-row">
+        <div class="footer-head">
         <h4 class="footer-title">F2E 前端開發</h4>
-        <p class="footer-desc">本網頁純屬練習與測試，文案與影像都為網路上取得而來，請勿營利使用!!<br>Design by Away</p>
+        <p class="footer-desc">本網頁純屬練習與測試，文案與影像都為網路上取得而來，請勿營利使用!!</p>
+        <p class="footer-desc">Design by Away</p> 
+        <p class="footer-desc">Copyright &copy; 2025-Present</p> 
+        </div>
+    <!-- 固定側欄  -->
+        <aside class="aside">
+            <div class="aside-head">
+                <a class="social ig" href="javascript:;">
+                    <i class="fa-brands fa-instagram fa-2x fa-fw"></i>
+                </a>
+                <a class="social fb" href="javascript:;">
+                    <i class="fa-brands fa-facebook fa-2x fa-fw"></i>
+                </a>
+                <a class="social tt" href="javascript:;">
+                    <i class="fa-brands fa-square-x-twitter fa-2x fa-fw"></i>
+                </a>
+            </div>
+            <div class="aside-body">
+                <a class="social up" href="#">
+                    <i class="fa-solid fa-circle-up fa-2x fa-fw"></i>
+                </a> 
+            </div>
+        </aside>
     </div>
 </footer>
 
